@@ -1,4 +1,4 @@
-This repository contains a PowerShell script which downloads & installs Java 17.0.1 from the OpenJDK site, and configures necessary environment variables.
+This repository contains a PowerShell script which downloads & installs Java 18 from the OpenJDK site, and configures necessary environment variables.
 
 ## Requirements
 
