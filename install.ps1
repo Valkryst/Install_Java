@@ -20,8 +20,8 @@ cd $java_folder
 
 
 # Download JDK ZIP & SHA256 Files
-$jdk_url = "https://download.java.net/java/GA/jdk17.0.1/2a2082e5a09d4267845be086888add4f/12/GPL/openjdk-17.0.1_windows-x64_bin.zip"
-$jdk_sha_url = "https://download.java.net/java/GA/jdk17.0.1/2a2082e5a09d4267845be086888add4f/12/GPL/openjdk-17.0.1_windows-x64_bin.zip.sha256"
+$jdk_url = "https://download.java.net/java/GA/jdk18/43f95e8614114aeaa8e8a5fcf20a682d/36/GPL/openjdk-18_windows-x64_bin.zip"
+$jdk_sha_url = "https://download.java.net/java/GA/jdk18/43f95e8614114aeaa8e8a5fcf20a682d/36/GPL/openjdk-18_windows-x64_bin.zip.sha256"
 
 $jdk_zip_file = "jdk.zip"
 $jdk_sha_file = "sha.sha256"
