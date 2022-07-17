@@ -21,8 +21,8 @@ Set-Location $java_folder
 
 
 # Download JDK ZIP & SHA256 Files
-$jdk_url = 'https://download.java.net/java/GA/jdk18/43f95e8614114aeaa8e8a5fcf20a682d/36/GPL/openjdk-18_windows-x64_bin.zip'
-$jdk_sha_url = 'https://download.java.net/java/GA/jdk18/43f95e8614114aeaa8e8a5fcf20a682d/36/GPL/openjdk-18_windows-x64_bin.zip.sha256'
+$jdk_url = 'https://download.java.net/java/GA/jdk18.0.1.1/65ae32619e2f40f3a9af3af1851d6e19/2/GPL/openjdk-18.0.1.1_windows-x64_bin.zip'
+$jdk_sha_url = 'https://download.java.net/java/GA/jdk18.0.1.1/65ae32619e2f40f3a9af3af1851d6e19/2/GPL/openjdk-18.0.1.1_windows-x64_bin.zip.sha256'
 
 $jdk_zip_file = 'jdk.zip'
 $jdk_sha_file = 'sha.sha256'
