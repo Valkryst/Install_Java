@@ -1,6 +1,6 @@
 #requires -Version 5.0
 $java_folder = "$env:ProgramFiles\Java"
-$jdk_folder = "$java_folder\jdk-17"
+$jdk_folder = "$java_folder\jdk-18"
 $bin_folder = "$jdk_folder\bin"
 
 
