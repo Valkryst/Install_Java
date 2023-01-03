@@ -8,7 +8,7 @@ To use this script, you must be running [PowerShell](https://github.com/PowerShe
 
 [Download](https://www.wikihow.com/Download-a-File-from-GitHub) the [PowerShell script](https://github.com/Valkryst/Install_Java/blob/main/install.ps1) and then run it either by double-clicking the file or by right-clicking and selecting "Run with PowerShell".
 
-It may take some time to run. depending on the speed of your computer and internet connection.
+It may take some time to run. Depending on the speed of your computer and internet connection.
 
 When the script completes, and if there are no error messages, you can open a new terminal and type `java --version`. If Java was successfully installed, you should see a message similar to the following:
 
