@@ -17,3 +17,5 @@ openjdk 17 2021-09-14
 OpenJDK Runtime Environment (build 17+35-2724)
 OpenJDK 64-Bit Server VM (build 17+35-2724, mixed mode, sharing)
 ```
+
+If you already had a version of Java installed, then you may need to manually edit your _Environment Variables_ and remove any old JDK paths from the `Path` variable.
