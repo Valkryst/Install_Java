@@ -1,9 +1,9 @@
 #requires -Version 5.0
 $openjdk = @(
     @{
-        version = "19.0.1";
-        zip_url = "https://download.java.net/java/GA/jdk19.0.1/afdd2e245b014143b62ccb916125e3ce/10/GPL/openjdk-19.0.1_windows-x64_bin.zip";
-        sha_url = "https://download.java.net/java/GA/jdk19.0.1/afdd2e245b014143b62ccb916125e3ce/10/GPL/openjdk-19.0.1_windows-x64_bin.zip.sha256"
+        version = "19.0.2";
+        zip_url = "https://download.java.net/java/GA/jdk19.0.2/fdb695a9d9064ad6b064dc6df578380c/7/GPL/openjdk-19.0.2_windows-x64_bin.zip";
+        sha_url = "https://download.java.net/java/GA/jdk19.0.2/fdb695a9d9064ad6b064dc6df578380c/7/GPL/openjdk-19.0.2_windows-x64_bin.zip.sha256"
     },
     @{
         version = "18.0.2";
@@ -22,7 +22,7 @@ $openjdk = @(
     },
     @{
         version = "15.0.2";
-        zip_url = "https://download.java.net/java/GA/jdk15.0.1/51f4f36ad4ef43e39d0dfdbaf6549e32/9/GPL/openjdk-15.0.1_windows-x64_bin.zip";
+        zip_url = "https://download.java.net/java/GA/jdk15.0.2/0d1cfde4252546c6931946de8db48ee2/7/GPL/openjdk-15.0.2_windows-x64_bin.zip";
         sha_url = "https://download.java.net/java/GA/jdk15.0.2/0d1cfde4252546c6931946de8db48ee2/7/GPL/openjdk-15.0.2_windows-x64_bin.zip.sha256"
     },
     @{
@@ -81,7 +81,7 @@ while (1) {
 
 
 $java_folder = "$env:ProgramFiles\Java"
-$jdk_folder = "$java_folder\jdk-$($openjdk.version)"
+$jdk_folder = "$java_folder\jdk\jdk-$($openjdk.version)"
 $bin_folder = "$jdk_folder\bin"
 
 
