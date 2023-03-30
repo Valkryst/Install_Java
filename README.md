@@ -6,7 +6,7 @@ To use this script, you must be running [PowerShell](https://github.com/PowerShe
 
 ## Usage
 
-[Download](https://www.wikihow.com/Download-a-File-from-GitHub) the [PowerShell script](https://github.com/Valkryst/Install_Java/blob/main/install.ps1) and then run it either by double-clicking the file or by right-clicking and selecting "Run with PowerShell". You may need to run the script with admin privileges.
+[Download](https://www.wikihow.com/Download-a-File-from-GitHub) the [PowerShell script](https://github.com/Valkryst/Install_Java/blob/main/install.ps1) and then run it either by double-clicking the file or by right-clicking and selecting "Run with PowerShell".
 
 It may take some time to run. Depending on the speed of your computer and internet connection.
 
