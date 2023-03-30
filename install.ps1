@@ -1,5 +1,27 @@
-#requires -Version 5.0
+# Prevent script from running on 32-bit systems as Java does not support them.
+if (![Environment]::Is64BitProcess) {
+  Write-Error -Message 'The latest version of Java requires a 64-bit version of Windows.'
+  $host.EnterNestedPrompt()
+  return
+}
+
+
+
+# Request Admin Privilieges
+$isAdmin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
+if (!$isAdmin) {
+    Start-Process powershell.exe -Verb RunAs -ArgumentList "-File `"$PSCommandPath`""
+    Exit
+}
+
+
+
 $openjdk = @(
+    @{
+        version = "20.0.0";
+        zip_url = "https://download.java.net/java/GA/jdk20/bdc68b4b9cbc4ebcb30745c85038d91d/36/GPL/openjdk-20_windows-x64_bin.zip";
+        sha_url = "https://download.java.net/java/GA/jdk20/bdc68b4b9cbc4ebcb30745c85038d91d/36/GPL/openjdk-20_windows-x64_bin.zip.sha256"
+    },
     @{
         version = "19.0.2";
         zip_url = "https://download.java.net/java/GA/jdk19.0.2/fdb695a9d9064ad6b064dc6df578380c/7/GPL/openjdk-19.0.2_windows-x64_bin.zip";
@@ -81,17 +103,14 @@ while (1) {
 
 
 $java_folder = "$env:ProgramFiles\Java"
-$jdk_folder = "$java_folder\jdk\jdk-$($openjdk.version)"
-$bin_folder = "$jdk_folder\bin"
 
-
-
-# Prevent script from running on 32-bit systems as Java does not support them.
-if (![Environment]::Is64BitProcess) {
-  Write-Error -Message 'The latest version of Java requires a 64-bit version of Windows.'
-  $host.EnterNestedPrompt()
-  return
+# Windows seems to auto-rename folders like "20.0.0" to "20".
+$jdk_folder = "$java_folder\jdk\jdk-" + $openjdk.version
+if ($jdk_folder.EndsWith(".0.0")) {
+    $jdk_folder = $jdk_folder.Substring(0, $jdk_folder.Length - 4)
 }
+
+$bin_folder = "$jdk_folder\bin"
 
 
 
