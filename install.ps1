@@ -91,7 +91,7 @@ while (1) {
 
 
     if(($jdk_version -lt 0) -or ($jdk_version -ige $openjdk.length)) {
-        Write-Host -Object "The value must be within the range of 1 to $($openjdk.length - 1)."
+        Write-Host -Object "The value must be within the range of 0 to $($openjdk.length - 1)."
         continue
     }
 
