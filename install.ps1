@@ -18,9 +18,9 @@ if (!$isAdmin) {
 
 $openjdk = @(
     @{
-        version = "20.0.0";
-        zip_url = "https://download.java.net/java/GA/jdk20/bdc68b4b9cbc4ebcb30745c85038d91d/36/GPL/openjdk-20_windows-x64_bin.zip";
-        sha_url = "https://download.java.net/java/GA/jdk20/bdc68b4b9cbc4ebcb30745c85038d91d/36/GPL/openjdk-20_windows-x64_bin.zip.sha256"
+        version = "20.0.2";
+        zip_url = "https://download.java.net/java/GA/jdk20.0.2/6e380f22cbe7469fa75fb448bd903d8e/9/GPL/openjdk-20.0.2_windows-x64_bin.zip";
+        sha_url = "https://download.java.net/java/GA/jdk20.0.2/6e380f22cbe7469fa75fb448bd903d8e/9/GPL/openjdk-20.0.2_windows-x64_bin.zip.sha256"
     },
     @{
         version = "19.0.2";
