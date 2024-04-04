@@ -168,7 +168,7 @@ $path = [Environment]::GetEnvironmentVariable('Path', 'Machine')
 
 [Environment]::SetEnvironmentVariable('JAVA_HOME', $jdk_folder, 'Machine')
 [Environment]::SetEnvironmentVariable('JDK_HOME', '%JAVA_HOME%', 'Machine')
-[Environment]::SetEnvironmentVariable('JRE_HOME', '%JAVA_HOME', 'Machine')
+[Environment]::SetEnvironmentVariable('JRE_HOME', '%JAVA_HOME%', 'Machine')
 
 
 
