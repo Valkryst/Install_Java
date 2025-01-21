@@ -18,9 +18,9 @@ if (!$isAdmin) {
 
 $openjdk = @(
     @{
-        version = "22.0.0";
-        zip_url = "https://download.java.net/java/GA/jdk22/830ec9fcccef480bb3e73fb7ecafe059/36/GPL/openjdk-22_windows-x64_bin.zip";
-        sha_url = "https://download.java.net/java/GA/jdk22/830ec9fcccef480bb3e73fb7ecafe059/36/GPL/openjdk-22_windows-x64_bin.zip.sha256"
+        version = "22.0.2";
+        zip_url = "https://download.java.net/java/GA/jdk22.0.2/c9ecb94cd31b495da20a27d4581645e8/9/GPL/openjdk-22.0.2_windows-x64_bin.zip";
+        sha_url = "https://download.java.net/java/GA/jdk22.0.2/c9ecb94cd31b495da20a27d4581645e8/9/GPL/openjdk-22.0.2_windows-x64_bin.zip.sha256"
     },
     @{
         version = "21.0.2";
